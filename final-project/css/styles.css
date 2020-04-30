@@ -1,0 +1,184 @@
+body
+{
+	margin-bottom: 80px;
+	background-color: #808080;
+}
+
+.page-header
+{
+	margin-top: 0;
+}
+
+.panel-body
+{
+	padding-top: 0;
+}
+
+.featuredImg
+{
+	margin-bottom: 15px;
+}
+
+textarea 
+{
+	resize: none;
+}
+
+.dropdown-menu
+{
+	background-color: white;
+}
+
+.dropdown-menu > li > a
+{
+	color: black;
+}
+
+.carousel-inner
+{
+	width: auto;
+	height: 100px;
+}
+
+.sg-input-menu {background-color:black;}
+
+mark
+{
+	background-color: yellow;
+}
+
+.box
+{
+	width: 100%;
+	height: auto;
+	padding: 10px;
+	border: 1px solid lightgray;
+}
+
+.box2
+{
+	margin-left: 10px;
+	width: 50%;
+	height: auto;
+	padding: 20px;
+	border: 1px solid lightgray;
+}
+
+.column 
+{
+  float: left;
+  width: 50%;
+}
+
+.row::after 
+{
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.checked
+{
+	color: orange;
+}
+
+.top-space
+{
+	padding-top: 100px;
+}
+
+.space
+{
+	padding-left: 24px;
+}
+
+.responsive
+{
+	max-width: 100%;
+}
+
+#box1
+{
+	
+	float: left;
+	width: 30%;
+	height: auto;
+	border: 1px solid lightgray;
+	margin-bottom: 20px;
+}
+
+#box2
+{
+	
+	margin:0 auto;
+	top: 50%;
+	left: 50%;
+	width: 30%;
+	height: auto;
+	border: 1px solid lightgray;
+	margin-bottom: 20px;
+}
+
+
+#box3
+{
+	
+	float: right;
+	width: 30%;
+	height: auto;
+	border: 1px solid lightgray;
+	margin-bottom: 20px;
+}
+
+#box1-2
+{
+	padding: 20px;
+	float: left;
+	width: 30%;
+	height: auto;
+	border: 1px solid lightgray;
+	margin-bottom: 20px;
+}
+
+#box2-2
+{
+	padding: 20px;
+	margin:0 auto;
+	top: 50%;
+	left: 50%;
+	width: 30%;
+	height: auto;
+	border: 1px solid lightgray;
+	margin-bottom: 20px;
+}
+
+
+#box3-2
+{
+	padding: 20px;
+	float: right;
+	width: 30%;
+	height: auto;
+	border: 1px solid lightgray;
+	margin-bottom: 20px;
+}
+
+#box1-50
+{
+	padding: 20px;
+	float: left;
+	width: 49%;
+	height: auto;
+	border: 1px solid lightgray;
+	margin-bottom: 20px;
+}
+
+#box2-50
+{
+	padding: 20px;
+	float: right;
+	width: 49%;
+	height: auto;
+	border: 1px solid lightgray;
+	margin-bottom: 20px;
+}

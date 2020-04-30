@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Cart</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+	<script src="store.js" async></script>
+</head>
+
+<style>
+	body
+	{
+		background-color: lightgray;
+	}
+
+	.shop-item {
+    margin: 30px;
+}
+
+
+.cart-column {
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid black;
+    margin-right: 1.5em;
+    padding-bottom: 10px;
+    margin-top: 10px;
+}
+
+.cart-row {
+    display: flex;
+}
+
+.cart-item.image
+{
+	max-width: 100%;
+}
+
+.cart-item 
+{
+    width: 50%;
+}
+
+.cart-price 
+{
+    width: 20%;
+}
+
+.cart-quantity 
+{
+    width: 35%;
+    max-width: 100%;
+}
+
+.cart-h
+{
+	font-weight: bold;
+}
+
+.shop-item-button
+{
+	max-width: 100%;
+	font-size: 100%;
+}
+
+
+.cart-item-title {
+    color: #333;
+    margin-left: .5em;
+    font-size: 1.2em;
+}
+
+.btn-danger {
+    color: white;
+    background-color: #EB5757;
+    border: none;
+    border-radius: .3em;
+    font-weight: bold;
+}
+
+.btn-danger:hover {
+    background-color: #CC4C4C;
+}
+
+.cart-quantity-input 
+{
+    height: 34px;
+    width: 50px;
+    border-radius: 5px;
+    border: 1px solid #56CCF2;
+    background-color: #eee;
+    color: #333;
+    padding: 0;
+    text-align: center;
+    font-size: 1.2em;
+    margin-right: 25px;
+}
+
+.cart-row:last-child 
+{
+	border-bottom: 1px solid lightgray;
+    border: none;
+}
+
+.cart-column
+{
+	border-bottom: 1px solid lightgray;
+}
+
+.cart-total {
+    text-align: end;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.cart-total-title 
+{
+    font-size: 1.5em;
+    margin-right: 20px;
+}
+
+.cart-total-price 
+{
+    color: #333;
+    font-size: 1.1em;
+}
+
+.btn-purchase {
+    display: block;
+    margin: 40px auto 80px auto;
+    font-size: 1.45em;
+}
+</style>
+
+<body>
+	<div class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<a title="Home" href ="index.html" class="navbar-brand">Home<height="auto" width="18%"></a>
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="login.html">Login</a></li>
+					<li><a href="consignment.html">Consignment</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="keyboards.html">Keyboards</a></li>
+							<li><a href="xbox.html">Xbox</a></li>
+						</ul>
+					</li>
+					<li class="active"><a href="store.html">Cart</a></li>
+					<li><a href="#contact" data-toggle="modal">Contact</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="https://www.instagram.com/aad1k/" target="_blank">Instagram</a></li>
+							<li><a href="https://www.snapchat.com/add/aadikatyal" target="_blank">Snapchat</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div class="page-header">
+							<h3>Shopping Cart</h3>
+						</div>
+							<h4>Add Items to Cart:</h4><br>
+							 <h4>*Currently Unavailable: <a href="redragon-K582.html">Redragon K582</a>*</h4><hr>
+				            <div class="shop-items">
+				            	<div id="box1">
+				            		<div class="responsive">
+						                <div class="shop-item">
+						                	<center>
+						                	<a href="2k17.html"><img class="shop-item-image" src="2k17.jpg" style="max-width: 100%">
+						                    <h5 class="responsive"><span class="shop-item-title">2K17</span></h5></a>
+						                    <div class="shop-item-details">
+						                        <h5><span class="shop-item-price">$7.99</span></h5>
+						                        <button class="btn btn-primary shop-item-button" type="button">+</button>
+						                    </div>
+						                </div>
+						            	</center>
+					           		</div>
+					            </div>
+					         	
+					        	<center>
+					            <div id="box3">
+					            	<div class="responsive">
+						                <div class="shop-item">
+						                    <a href="war.html"><img class="shop-item-image" src="war.jpg" style="max-width: 100%">
+						                    <h5><span class="shop-item-title">COD</span></h5></a>
+						                    <div class="shop-item-details">
+						                        <h5><span class="shop-item-price">$7.99</span></h5>
+						                        <button class="btn btn-primary shop-item-button" type="button">+</button>
+						                    </div>
+						                </div>
+					            	</div>
+				                </div>
+				            	</center>
+
+				            	<center>
+					            <div id="box2">
+					            	<div class="responsive">
+						                <div class="shop-item">
+						                    <a href="halo.html"><img class="shop-item-image" src="halo.jpg" style="max-width: 100%">
+						                    <h5><span class="shop-item-title">Halo</span></h5></a>
+						                    <div class="shop-item-details">
+						                        <h5><span class="shop-item-price">$9.99</span></h5>
+						                        <button class="btn btn-primary shop-item-button" type="button">+</button>
+						                    </div>
+						                </div>
+					            	</div>
+					            </div>
+					        	</center>
+				            </div><br>
+
+				        	<h4>Add More/Remove Items:</h4>
+				            <hr>
+				            <div class="cart-row">
+				                <span class="cart-item cart-h cart-header cart-column">Item Keyword</span>
+				                <span class="cart-price cart-h cart-header cart-column">Price</span>
+				                <span class="cart-quantity cart-h cart-header cart-column">Quantity</span>
+				            </div>
+				            <div class="cart-items">
+				            </div>
+				            <div class="cart-total">
+				                <div class="box" style="max-width: 100%">
+									<div class="responsive">
+										<strong class="cart-total-title">Total</strong>
+										<span class="cart-total-price">$0</span>
+									</div>
+								</div>
+				            <a href="login.html"><button class="btn btn-primary btn-purchase" type="button">Place Order</button></a>
+						</div>
+					</div>
+				</div>
+		</div>
+
+		<div class="col-lg-3">
+				<div class="list-group">
+					<h4>Products We Sell:</h4><br>
+					<a href="keyboards.html" class="list-group-item">
+						<h4 class="list-group-item-heading">Keyboards</h4>
+						<p class="list-group-item-heading"></p>
+					</a>
+
+					<a href="xbox.html" class="list-group-item">
+						<h4 class="list-group-item-heading">Xbox Games</h4>
+						<p class="list-group-item-heading"></p>
+					</a>
+				</div>
+			</div>
+	</div>
+
+	<div class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container">
+			<p class="navbar-text pull-left">Site Built by Aadi Katyal</p>
+		</div>
+	</div>
+
+	<div class="modal fade" id="contact">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form class="form-horizontal">
+					<div class="modal-header">
+						<h4>Contact Me</h4>
+					</div>
+
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="contact-name" class="col-lg-2">Name: </label>
+							<div class="col-lg-10">
+								<input type="text" class="form-control" id="contact-name" placeholder="Full Name">	
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="contact-name" class="col-lg-2">Email: </label>
+							<div class="col-lg-10">
+								<input type="email" class="form-control" id="contact-email" placeholder="you@example.com">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="contact-msg" class="col-lg-2">Message: </label>
+							<div class="col-lg-10">
+								<textarea class="form-control" rows="7" placeholder="Message"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="btn btn-default" data-dismiss="modal">Close</a>
+						<button class="btn btn-primary" type="submit"><form action="mailto:aadikatyal21@gmail.com"></form>Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

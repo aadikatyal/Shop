@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="initial-scale=1, maximum-scale=1">
+	<title>Keyboards</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href = "css/styles.css" rel = "stylesheet">
+</head>
+
+<style>
+	body
+	{
+		background-color: lightgray;
+	}
+</style>
+
+<body>
+	<div class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<a title="Home" href ="index.html" class="navbar-brand">Home<height="auto" width="18%"></a>
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="login.html">Login</a></li>
+					<li><a href="consignment.html">Consignment</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li class="active"><a href="keyboards.html">Keyboards</a></li>
+							<li><a href="xbox.html">Xbox</a></li>
+						</ul>
+					</li>
+					<li><a href="store.html">Cart</a></li>
+					<li><a href="#contact" data-toggle="modal">Contact</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="https://www.instagram.com/aad1k/" target="_blank">Instagram</a></li>
+							<li><a href="https://www.snapchat.com/add/aadikatyal" target="_blank">Snapchat</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-9">
+				<div class="panel panel-default">
+					<div class="panel-body">
+						<div class="page-header">
+							<h3>Keyboards</h3>
+						</div>
+						<center>
+							<div class="responsive">
+								<div id="box1-50">
+									<center><a href="redragon-K582.html"><img src="keyboard.png" style="width: 100%; height: 100%"><h4 style="width: 100%; height: 100%">Redragon K582</h4></a>
+								   		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span></center>
+								</div>
+								<div id="box2-50">
+									<center><a href="redragon-K582.html"><img src="keyboard.png" style="width: 100%; height: 100%"><h4>Redragon K582</h4></a>
+								   		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span>
+										<span class="fa fa-star checked"></span></center>
+								</div>
+							</div>
+						</center>
+						<br>
+					</div>
+				</div>
+			</div>
+
+			<div class="col-lg-3">
+				<div class="list-group">
+					<h4>Keyboards We Sell:</h4><br>
+					<a href="redragon-K582.html" class="list-group-item">
+						<h4 class="list-group-item-heading">Redragon K582</h4>
+						<p class="list-group-item-heading"></p>
+					</a>
+				</div>
+
+				<div class="list-group">
+					<h4>Products We Sell:</h4><br>
+					<a href="keyboards.html" class="list-group-item active">
+						<h4 class="list-group-item-heading">Keyboards</h4>
+						<p class="list-group-item-heading"></p>
+					</a>
+
+					<a href="xbox.html" class="list-group-item">
+						<h4 class="list-group-item-heading">Xbox Games</h4>
+						<p class="list-group-item-heading"></p>
+					</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container">
+			<p class="navbar-text pull-left">Site Built by Aadi Katyal</p>
+		</div>
+	</div>
+
+	<div class="modal fade" id="contact">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form class="form-horizontal">
+					<div class="modal-header">
+						<h4>Contact Me</h4>
+					</div>
+
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="contact-name" class="col-lg-2">Name: </label>
+							<div class="col-lg-10">
+								<input type="text" class="form-control" id="contact-name" placeholder="Full Name">	
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="contact-name" class="col-lg-2">Email: </label>
+							<div class="col-lg-10">
+								<input type="email" class="form-control" id="contact-email" placeholder="you@example.com">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="contact-msg" class="col-lg-2">Message: </label>
+							<div class="col-lg-10">
+								<textarea class="form-control" rows="7" placeholder="Message"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="btn btn-default" data-dismiss="modal">Close</a>
+						<button class="btn btn-primary" type="submit"><form action="mailto:aadikatyal21@gmail.com"></form>Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Login/Register</title>
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/styles.css" rel="stylesheet">
+</head>
+
+<style>
+	body
+	{
+		background-color: lightgray;
+	}
+
+	.hero
+	{
+		height: 100%;
+		width: 100%;
+		background-size: cover;
+	}
+
+	.form-box
+	{
+		width: 380px;
+		height: 480px;
+		position: relative;
+		margin: 6% auto;
+		background: #fff;
+		padding: 5px;
+		overflow: hidden;
+	}
+
+	.button-box
+	{
+		width: 220px;
+		margin: 35px auto;
+		position: relative;
+		box-shadow: 0 0 20px 9px #ff61241f;
+		border-radius: 30px;
+		background-color: #C0C0C0;
+	}
+
+	.toggle-btn-2
+	{
+		padding: 10px 30px;
+		cursor: pointer;
+		background: transparent;
+		border: 0;
+		outline: none;
+		position: relative;
+		color: white;
+	}
+
+	#btn-2
+	{
+		top: 0;
+		left: 0;
+		position: absolute;
+		width: 110px;
+		height: 100%;
+		background: linear-gradient(to right, #428bca, #428bca);
+		border-radius: 30px;
+		transition: .5s;
+
+	}
+
+	.social-icons
+	{
+		margin: 30px auto;
+		text-align: center;
+	}
+
+	.social-icons img
+	{
+		width: 30px;
+		margin: 0 12px;
+		box-shadow: 0 0 20px 0 #7f7f7f3d;
+		cursor: pointer;
+		border-radius: 50%;
+	}
+
+	.input-group
+	{
+		top: 180px;
+		position: absolute;
+		width: 280px;
+		transition: .5s;
+	}
+
+	.input-field
+	{
+		width: 100%;
+		padding: 10px 0;
+		margin: 5px 0;
+		border-left: 0;
+		border-top: 0;
+		border-right: 0;
+		border-bottom: 1px solid #999;
+		outline: none;
+		background: transparent;
+	}
+
+	.submit-btn-2
+	{
+		width: 85%;
+		padding: 10px 30px;
+		cursor: pointer;
+		display: block;
+		margin: auto;
+		background: linear-gradient(to right, #428bca, #428bca);
+		border: 0;
+		outline: none;
+		border-radius: 30px;
+		color: white;
+	}
+
+	.check-box
+	{
+		margin: 30px 10px 30px 0;
+	}
+
+	#login
+	{
+		left: 50px;
+	}
+
+	#register
+	{
+		left: 450px;
+	}
+
+
+</style>
+
+<body>
+	<div class="navbar navbar-default navbar-static-top">
+		<div class="container">
+			<a title="Home" href ="index.html" class="navbar-brand">Home<height="auto" width="18%"></a>
+			<button class="navbar-toggle" data-toggle="collapse" data-target=".navHeaderCollapse">
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+				<span class="icon-bar"></span>
+			</button>
+			<div class="collapse navbar-collapse navHeaderCollapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li class="active"><a href="login.html">Login</a></li>
+					<li><a href="consignment.html">Consignment</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Products<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="keyboards.html">Keyboards</a></li>
+							<li><a href="xbox.html">Xbox</a></li>
+						</ul>
+					</li>
+					<li><a href="store.html">Cart</a></li>
+					<li><a href="#contact" data-toggle="modal">Contact</a></li>
+					<li class="dropdown">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown">Social Media<b class="caret"></b></a>
+						<ul class="dropdown-menu">
+							<li><a href="https://www.instagram.com/aad1k/" target="_blank">Instagram</a></li>
+							<li><a href="https://www.snapchat.com/add/aadikatyal" target="_blank">Snapchat</a></li>
+						</ul>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="hero">
+		<div class="form-box">
+			<div class="button-box">
+				<div id="btn-2"></div>
+					<button type="button" class="toggle-btn-2" onclick="login()">Log In</button>
+					<button type="button" class="toggle-btn-2" onclick="register()">Register</button>
+			</div>
+
+			<div class="social-icons">
+				<a href="https://www.instagram.com" target="_blank"><img src="ig.png"></a>
+				<a href="https://www.facebook.com" target="_blank"><img src="fb.png"></a>
+				<a href="https://www.twitter.com" target="_blank"><img src="tw.png"></a>
+			</div>
+
+			<form id="login" class="input-group" method="get" action="index.html">
+				<input type="text" class="input-field" placeholder="Username" required>
+				<input type="password" class="input-field" placeholder="Password" required>
+				<br><br>
+				<input type="checkbox" class="check-box"><span> Remember Password</span><br><br>
+				<button class="submit-btn-2">Log In</button>
+			</form>
+
+			<form id="register" class="input-group" method="get" action="index.html">
+				<input type="text" class="input-field" placeholder="Username" required>
+				<input type="email" class="input-field" placeholder="Email Address" required>
+				<input type="password" class="input-field" placeholder="Password" required><br><br>
+				<input type="checkbox" class="check-box"><span> I Agree To <a href="#">Consignment Terms</a></span>
+				<br><br>
+				<button type="submit" class="submit-btn-2">Register</button>
+			</form>
+		</div>
+	</div>
+
+	<script>
+		var x = document.getElementById("login");
+		var y = document.getElementById("register");
+		var z = document.getElementById("btn-2");
+
+		function register()
+		{
+			x.style.left = "-400px";
+			y.style.left = "50px";
+			z.style.left = "110px";
+		}
+
+		function login()
+		{
+			x.style.left = "50px";
+			y.style.left = "450px";
+			z.style.left = "0";
+		}
+
+	</script>
+
+	<div class="navbar navbar-default navbar-fixed-bottom">
+		<div class="container">
+			<p class="navbar-text pull-left">Site Built by Aadi Katyal</p>
+		</div>
+	</div>
+
+	<div class="modal fade" id="contact">
+		<div class="modal-dialog">
+			<div class="modal-content">
+				<form class="form-horizontal">
+					<div class="modal-header">
+						<h4>Contact Me</h4>
+					</div>
+
+					<div class="modal-body">
+						<div class="form-group">
+							<label for="contact-name" class="col-lg-2">Name: </label>
+							<div class="col-lg-10">
+								<input type="text" class="form-control" id="contact-name" placeholder="Full Name">	
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="contact-name" class="col-lg-2">Email: </label>
+							<div class="col-lg-10">
+								<input type="email" class="form-control" id="contact-email" placeholder="you@example.com">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="contact-msg" class="col-lg-2">Message: </label>
+							<div class="col-lg-10">
+								<textarea class="form-control" rows="7" placeholder="Message"></textarea>
+							</div>
+						</div>
+					</div>
+					<div class="modal-footer">
+						<a class="btn btn-default" data-dismiss="modal">Close</a>
+						<button class="btn btn-primary" type="submit"><form action="mailto:aadikatyal21@gmail.com"></form>Send</button>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
